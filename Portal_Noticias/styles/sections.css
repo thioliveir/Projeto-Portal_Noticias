@@ -2,10 +2,29 @@ section header {
     border-top: 1px solid var(--stroke-color);
     padding-block: 12px 24px;
     font: var(--text-span);
+
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            background-image: url(../Assets/icon/ArrowRight.svg);
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+        }
+        &:hover span{
+            background-image: url(../Assets/icon/ArrowRight-Dark.svg);
+            background-repeat: no-repeat;
+        }
+    }
+
 }
 
 
 #features {
+    grid-area: features;
     img {
         height: 100%;
         object-fit: cover;
@@ -40,24 +59,7 @@ section header {
 }
 
 #weekly {
-
-    header a {
-        justify-self: end;
-        align-items: center;
-        gap: 8px;
-
-        span {
-            background-image: url(../Assets/icon/ArrowRight.svg);
-            background-repeat: no-repeat;
-            width: 16px;
-            height: 16px;
-        }
-        &:hover span{
-            background-image: url(../Assets/icon/ArrowRight-Dark.svg);
-            background-repeat: no-repeat;
-        }
-
-    }
+    grid-area: weekly;
 
 
     &>div {
@@ -68,4 +70,49 @@ section header {
         height: 160px;
     }
 
+    figure {
+        position: relative;
+
+        .content-tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+    }
+
+    p {
+        margin-top: 8px;
+        font-weight: 800;
+    }
+
+}
+
+#artificial-intligency {
+    grid-area: artificial-intligency;
+    img {
+        width: 176px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    h3 {
+        margin-block: 8px 4px;
+    }
+}
+
+aside {
+    grid-area: aside;
+
+}
+
+#more {
+    margin-top: 32px;
+
+    img {
+        width: 72px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    h3 {
+        margin-top: 8px;
+    }
 }

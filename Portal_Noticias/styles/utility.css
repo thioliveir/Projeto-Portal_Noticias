@@ -15,6 +15,9 @@
 .gap-16 {
     gap: 16px;
 }
+.gap-32 {
+    gap: 32px;
+}
 
 .text-2xl {
     font: var(--text-heading1);
@@ -26,5 +29,5 @@
     font: var(--text-heading3);
 }
 .text-sm {
-    font: var(--text-heading3);
+    font: var(--text-paragraph);
 }
